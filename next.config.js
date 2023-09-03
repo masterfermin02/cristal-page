@@ -3,7 +3,7 @@ module.exports = {
   images: {
     reactStrictMode: true,
     output: 'export',
-    distDir: '_static',
+    distDir: '.next/static',
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
