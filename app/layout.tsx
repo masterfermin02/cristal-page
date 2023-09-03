@@ -20,7 +20,7 @@ function Footer() {
         <div className={'col-md-4 col-sm-12 col-sx-12'}>
             <div className={'row'}>
                 <div className={'col-md-2'}>
-                    <p className={'pt-20'}>
+                    <p className={'pt-20 footer-text-sm-center'}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                              className="bi bi-geo-alt" viewBox="0 0 16 16">
                             <path
@@ -30,8 +30,8 @@ function Footer() {
                     </p>
                 </div>
                 <div className={'col-md-8'}>
-                    <p>Plaza Dommyn mall<br/>
-                    Autopista Duarte, El Empbrujo.<br/>
+                    <p className={'footer-text-sm-center'}>Plaza Dommyn mall<br/>
+                    Autopista Duarte, El Embrujo.<br/>
                     Santiago. Rep. Dom</p>
                 </div>
             </div>
@@ -49,7 +49,7 @@ function Footer() {
             </p>
         </div>
         <div className={'col-md-4 col-sm-12 col-sx-12'}>
-            <p className={'pt-20 text-end'}>
+            <p className={'pt-20 footer-text-sm-center footer-instragram'}>
                 <a href={'https://www.instagram.com/goodshapesti/?hl=en'} target={'_blank'}>
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"

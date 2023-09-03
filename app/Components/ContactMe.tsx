@@ -29,7 +29,7 @@ export default function ContactMe() {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="d-none d-sm-block mt-5 pb-4">
+                    <div className="d-sm-block mt-5 pb-4">
                         <a href={DEFAULT_WHATSAPP_URL + DEFAULT_WHATSAPP_MESSAGE} target={'_blank'} className="btn_2">Contactar</a>
                     </div>
                 </div>

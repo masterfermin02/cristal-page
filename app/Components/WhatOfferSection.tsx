@@ -24,7 +24,7 @@ const TeamSection = () => {
                                 />
                             </div>
                             <div className="cat-cap">
-                                <h5><a href="#planes">Entrenamineto asistido</a></h5>
+                                <h5><a href="#planes">Entrenamiento asistido</a></h5>
                             </div>
                         </div>
                     </div>

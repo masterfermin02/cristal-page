@@ -17,7 +17,7 @@ export default function AboutSection() {
                 </div>
                 <div className="left-content2">
                     <div className="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                        <div className="front-text">
+                        <div className="front-text about-me text-sm-center text-md-center">
                             <h2 className=""><span className={"about-me-span"}>So</span>bre mi</h2>
                             <p>
                                 Soy Cristal López, una dominicana de pura cepa nacida en 1997. Desde mi infancia, el mundo del deporte ha sido una parte fundamental de mi vida. Fui introducida al fascinante mundo del fitness por excelentes maestros que me mostraron su importancia.

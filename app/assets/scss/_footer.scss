@@ -60,4 +60,15 @@
             }
         }
     }
+    .footer-text-sm-center {
+        @media (max-width: 746px) {
+            text-align: center;
+        }
+    }
+    .footer-instragram {
+        text-align: end;
+        @media (max-width: 746px) {
+            text-align: center;
+        }
+    }
 }

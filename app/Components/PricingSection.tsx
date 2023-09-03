@@ -33,7 +33,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="INCLUYE 2 REPOSICIONES DE CLASE O CAMBIOS DE HORARIO" />
                                     <SingleFeature label="EVALUACIÓN FÍSICA AL COMPLETAR EL MES" />
                                     <SingleFeature label="GUÍA DE SUPLEMENTACIÓN" />
-                                    <a href={whatsAppUrl + createMessage('Plan Basico')} target={'_blank'} className="border-btn border-btn2">Verificar</a>
+                                    <a href={whatsAppUrl + createMessage('Plan Basico')} target={'_blank'} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="INCLUYE 2 CAMBIOS DE HORARIO" />
                                     <SingleFeature label="EVALUACIÓN FÍSICA AL COMPLETAR EL MES" />
                                     <SingleFeature label="GUÍA DE SUPLEMENTACIÓN" />
-                                    <a href={whatsAppUrl + createMessage('Plan Good Shape')} target={'_blank'} className="border-btn border-btn2">Verificar</a>
+                                    <a href={whatsAppUrl + createMessage('Plan Good Shape')} target={'_blank'} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
@@ -78,7 +78,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="HORARIO FLEXIBLE: INCLUYE 2 CAMBIOS DE HORARIO A LA SEMANA" />
                                     <SingleFeature label="1 EVALUACIÓN FÍSICA AL COMPLETAR EL MES" />
                                     <SingleFeature label="GUÍA DE SUPLEMENTACIÓN" />
-                                    <a href={whatsAppUrl + createMessage('Plan premium')} target={'_blank'} className="border-btn border-btn2">Verificar</a>
+                                    <a href={whatsAppUrl + createMessage('Plan premium')} target={'_blank'} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="1 ACOMPAÑANTE 1 VEZ A LA SEMANA OPCIONAL" />
                                     <SingleFeature label="1 DESCARGA MUSCULAR POR MES" />
                                     <SingleFeature label="GUÍA DE SUPLEMENTACIÓN" />
-                                    <a href={whatsAppUrl + createMessage('Plan elite')} target={'_blank'} className="border-btn border-btn2">Verificar</a>
+                                    <a href={whatsAppUrl + createMessage('Plan elite')} target={'_blank'} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="ACCESO A LAS INSTALACIONES RESPETANDO SU HORARIO ASIGNADO, EN CASO DE NECESITAR CAMBIO DE HORARIO DURANTE EL MES CONFIRMAR DISPONIBILIDAD." />
                                     <SingleFeature label="GUIA O AYUDA DEL PERSONAL CAPACITADO SI LO REQUIERE" />
                                     <SingleFeature label="1 EVALUACION DE SEGUIMIENTO GRATIS A LOS 3 MESES CONSECUTIVOS" />
-                                    <a href={whatsAppUrl + createMessage('Plan yo perreo sol@')} target={'_blank'} className="border-btn border-btn2">Verificar</a>
+                                    <a href={whatsAppUrl + createMessage('Plan yo perreo sol@')} target={'_blank'} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +146,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="INCLUYE 2 CAMBIOS DE HORARIO" />
                                     <SingleFeature label="1 EVALUACION FISICA AL COMPLETAR EL MES" />
                                     <SingleFeature label="PUEDE LLEVAR UN ACOMPANANTE ADULTO DURANTE LA HORA DE CLASE" />
-                                    <a href={whatsAppUrl + createMessage('Kids & Teens')} target={'_blank'} className="border-btn border-btn2">Verificar</a>
+                                    <a href={whatsAppUrl + createMessage('Su plan Kids y Teens')} target={'_blank'} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,7 @@ const PricingSection = ({ whatsAppUrl
                                     <SingleFeature label="ATENCION DIARIA AL CLIENTE VIA WHATSAPP" />
                                     <SingleFeature label="SEGUIMIENTO 1 VEZ A LA SEMANA VIA WHATSAPP" />
                                     <SingleFeature label="EVALUACION DE SEGUIMIENTO 1 VEZ AL MES" />
-                                    <a target={'_blank'} href={whatsAppUrl + createMessage('Online Coaching')} className="border-btn border-btn2">Verificar</a>
+                                    <a target={'_blank'} href={whatsAppUrl + createMessage('Online Coaching')} className="border-btn border-btn2">Ver disponibilidad</a>
                                 </div>
                             </div>
                         </div>
