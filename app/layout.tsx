@@ -17,7 +17,7 @@ function Footer() {
   return (
     <footer className="footer-area container">
       <div className={'row'}>
-        <div className={'col-md-4'}>
+        <div className={'col-md-4 col-sm-12 col-sx-12'}>
             <div className={'row'}>
                 <div className={'col-md-2'}>
                     <p className={'pt-20'}>
@@ -36,7 +36,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-        <div className={'col-md-4'}>
+        <div className={'col-md-4 col-sm-12 col-sx-12'}>
             <p className={'pt-20 text-center'}>
                 <a href={DEFAULT_WHATSAPP_URL + DEFAULT_WHATSAPP_MESSAGE} target={'_blank'}>
                     <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -48,7 +48,7 @@ function Footer() {
                 </a>
             </p>
         </div>
-        <div className={'col-md-4'}>
+        <div className={'col-md-4 col-sm-12 col-sx-12'}>
             <p className={'pt-20 text-end'}>
                 <a href={'https://www.instagram.com/goodshapesti/?hl=en'} target={'_blank'}>
                     <span>

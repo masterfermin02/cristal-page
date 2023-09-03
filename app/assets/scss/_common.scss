@@ -965,21 +965,29 @@ hr {
 }
 
 .mapouter{
-	position:relative;
-	text-align:center;
 	width:800px;
 	height:400px;
 	margin-left: auto;
 	margin-right: auto;
+	@media (max-width: 746px) {
+		width: 400px;
+	}
 }
 .gmap_canvas {
 	overflow:hidden;
 	background:none!important;
 	width:800px;
 	height:400px;
-	margin-left: auto;
-	margin-right: auto;
 	padding: 20px;
 	border: 10px solid red;
+	@media (max-width: 746px) {
+		width: 400px;
+	}
 }
-.gmap_iframe {width:800px!important;height:400px!important;}
+.gmap_iframe {
+	width:800px!important;
+	height:400px!important;
+	@media (max-width: 746px) {
+		width: 400px;
+	}
+}

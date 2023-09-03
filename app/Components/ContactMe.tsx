@@ -12,8 +12,8 @@ export default function ContactMe() {
                         </div>
                     </div>
                 </div>
-                <div className="d-none d-sm-block mb-5 pb-4">
-                    <div id="map" className={'container'} >
+                <div className="row">
+                    <div id="map" className={'col align-self-center'} >
                         <div className="mapouter">
                             <div className="gmap_canvas">
                                 <iframe
@@ -23,12 +23,15 @@ export default function ContactMe() {
                                     marginHeight={0}
                                     marginWidth={0}
                                     src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=Plaza dommy mall&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                                ></iframe></div>
+                                ></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="d-none d-sm-block mb-5 pb-4">
-                    <a href={DEFAULT_WHATSAPP_URL + DEFAULT_WHATSAPP_MESSAGE} target={'_blank'} className="btn_2">Contactar</a>
+                <div className="row">
+                    <div className="d-none d-sm-block mt-5 pb-4">
+                        <a href={DEFAULT_WHATSAPP_URL + DEFAULT_WHATSAPP_MESSAGE} target={'_blank'} className="btn_2">Contactar</a>
+                    </div>
                 </div>
             </div>
         </section>
