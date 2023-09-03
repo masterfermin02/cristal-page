@@ -24,7 +24,7 @@ const TeamSection = () => {
                                 />
                             </div>
                             <div className="cat-cap">
-                                <h5><a href="services.html">Entrenamineto asistido</a></h5>
+                                <h5><a href="#planes">Entrenamineto asistido</a></h5>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const TeamSection = () => {
                                 />
                             </div>
                             <div className="cat-cap">
-                                <h5><a href="services.html">Nutricion</a></h5>
+                                <h5><a href="#planes">Nutricion</a></h5>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const TeamSection = () => {
                                 />
                             </div>
                             <div className="cat-cap">
-                                <h5><a href="services.html">Online coaching</a></h5>
+                                <h5><a href="#planes">Online coaching</a></h5>
                             </div>
                         </div>
                     </div>
