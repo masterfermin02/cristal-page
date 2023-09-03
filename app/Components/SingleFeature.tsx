@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SingleFeature({ label }) {
+export default function SingleFeature({ label }: { label: string }) {
   return (
     <div className="single-features">
         <div className="features-icon">

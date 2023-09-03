@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-export const Menu = ({ whatsAppUrl, message}) => {
+export const Menu = ({
+ whatsAppUrl,
+ message
+}: {
+    whatsAppUrl: string;
+    message: string;
+}) => {
     return (
         <header>
             {/* Header Start */}

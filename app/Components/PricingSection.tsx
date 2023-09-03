@@ -2,7 +2,10 @@ import React from 'react';
 import SingleFeature from "@/app/Components/SingleFeature";
 import {createMessage} from "@/lib/whatsapp";
 
-const PricingSection = ({ whatsAppUrl }) => {
+const PricingSection = ({ whatsAppUrl
+}: {
+    whatsAppUrl: string
+}) => {
     return (
         <section id={'planes'} className="pricing-area section-padding40 fix">
             <div className="container">

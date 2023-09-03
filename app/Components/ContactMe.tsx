@@ -18,10 +18,10 @@ export default function ContactMe() {
                             <div className="gmap_canvas">
                                 <iframe
                                     className="gmap_iframe"
-                                    frameBorder="0"
-                                    scrolling="no"
-                                    marginHeight="0"
-                                    marginWidth="0"
+                                    frameBorder={"0"}
+                                    scrolling={"no"}
+                                    marginHeight={0}
+                                    marginWidth={0}
                                     src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=Plaza dommy mall&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                                 ></iframe></div>
                         </div>
