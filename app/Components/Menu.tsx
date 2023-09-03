@@ -18,7 +18,7 @@ export const Menu = ({
                             <div className="logo">
                                 <a href="/">
                                     <Image
-                                        src="/assets/img/logo/hero3.png"
+                                        src="/assets/img/logo/good-shape-logo-04.png"
                                         alt=""
                                         width={200}
                                         height={80}
