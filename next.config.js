@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
+  reactStrictMode: true,
+  output: 'export',
+  distDir: '_static',
   images: {
-    reactStrictMode: true,
-    output: 'export',
-    distDir: '.next/static',
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
