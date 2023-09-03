@@ -1,0 +1,92 @@
+.pricing-area{
+    background-color: #fff;
+    padding-top: 50px;
+    .properties{
+        .about-icon {
+            width: 80px;
+            height: 80px;
+            background: red;
+            border-radius: 50px;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 31px;
+            line-height: 80px;
+            text-align: center;
+            box-shadow: 0px 15px 25px rgba(66, 85, 164,.08);
+        }
+        .price-format {
+            font-size: 30px;
+            color: red;
+            -webkit-text-stroke: 1px red;
+            -webkit-text-fill-color: transparent;
+        }
+        &__caption{
+            span.month {
+                font-size: 30px;
+                font-weight: 500;
+                color: red;
+                text-transform: uppercase;
+            }
+            P{
+                color: red;
+                font-size: 30px;
+                font-weight: 500;
+                text-transform: uppercase;
+                & > span{
+                    color: red;
+                    font-size:14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &:hover{
+            .border-btn2{
+                color: #fff;
+                background: $btn_bg;
+                @include transition(.4s);
+            }
+        }
+        .border-btn2 {
+            border: 2px solid red;
+            color: red;
+        }
+        .single-features {
+            display: flex;
+            .features-icon{
+                position: relative;
+                top: 8px;
+                img {
+                    display: block;
+                }
+            }
+            .features-caption {
+                padding-left: 19px;
+                p {
+                    font-size: 16px;
+                    line-height: 1.7;
+                    color: red;
+                    text-transform: capitalize;
+                }
+            }
+
+        }
+        &__card{
+            box-shadow: 0px 6px 6px 0px rgba(2, 25, 65, 0.08);
+            @include transition(.4s);
+            border: 1px solid red;
+            padding: 36px 24px 25px 24px;
+            &:hover{
+                box-shadow: 0px 8px 8px 0px rgba(2,25,65,0.08);
+            }
+        }
+
+    }
+}
+.border-btn2{
+    width: 100%;
+    text-align: center;
+}
+
+.others-service-title {
+    color: red;
+}
