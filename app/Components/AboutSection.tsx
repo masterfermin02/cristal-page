@@ -8,9 +8,8 @@ export default function AboutSection() {
                 <div className="right-content2">
                     <div className="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
                         <img
-                            className={'about-me-image'}
+                            className={'img-fluid'}
                             src="/../assets/img/gallery/cristal-goma.png"
-                            height={826}
                             alt=""
                         />
                     </div>
