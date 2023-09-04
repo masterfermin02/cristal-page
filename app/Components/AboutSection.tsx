@@ -7,10 +7,10 @@ export default function AboutSection() {
             <div className="support-wrapper align-items-center">
                 <div className="right-content2">
                     <div className="right-img wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                        <Image
+                        <img
+                            className={'about-me-image'}
                             src="/../assets/img/gallery/cristal-goma.png"
-                            width={716}
-                            height={956}
+                            height={826}
                             alt=""
                         />
                     </div>
