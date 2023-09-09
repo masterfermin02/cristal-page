@@ -981,7 +981,9 @@ hr {
 	padding: 20px;
 	border: 10px solid red;
 	@media (max-width: 746px) {
-		width: 350px;
+		width: 370px;
+		border: none;
+		padding: 0;
 	}
 }
 .gmap_iframe {

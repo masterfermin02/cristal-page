@@ -17,10 +17,10 @@ export const Menu = ({
                             {/* Logo */}
                             <div className="logo">
                                 <a href="/">
-                                    <Image
+                                    <img
+                                        className={'menu-logo'}
                                         src="/assets/img/logo/good-shape-logo-04.png"
                                         alt=""
-                                        width={200}
                                         height={80}
                                     />
                                 </a>

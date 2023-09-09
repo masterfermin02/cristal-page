@@ -1,7 +1,11 @@
 .team-area{
+  @media #{$sm}{
+    padding-top: 50px;
+  }
     @media #{$xs}{
         padding-top: 50px;
     }
+
     .single-cat{
         @include transition(.4s);
         z-index: 1;
@@ -53,7 +57,7 @@
                 @include transition(.2s);
             }
         }
-        // Hover Effect In single 
+        // Hover Effect In single
         &:hover{
             .cat-cap{
                 h5{

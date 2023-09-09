@@ -20,7 +20,7 @@
             padding: 0 15px;
         }
         // Responsive header padding top
-    
+
        @media #{$md}{
             padding-top: 16px;
             padding-bottom: 21px;
@@ -114,7 +114,7 @@
                                 // @include transition(.4s);
                             }
                         }
-                    } 
+                    }
                 }
             }
         }
@@ -149,7 +149,7 @@
             }
             @media #{$xs}{
                 padding: 15px 0px;
-            } 
+            }
         }
     }
 }
@@ -187,4 +187,8 @@
             }
         }
     }
+}
+
+.menu-logo {
+    width: 100%;
 }
