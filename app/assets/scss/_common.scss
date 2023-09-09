@@ -970,7 +970,7 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	@media (max-width: 746px) {
-		width: 350px;
+		width: 100%;
 	}
 }
 .gmap_canvas {
@@ -981,7 +981,7 @@ hr {
 	padding: 20px;
 	border: 10px solid red;
 	@media (max-width: 746px) {
-		width: 370px;
+		width: 100%;
 		border: none;
 		padding: 0;
 	}
@@ -990,6 +990,6 @@ hr {
 	width:800px!important;
 	height:400px!important;
 	@media (max-width: 746px) {
-		width: 350px;
+		width: 100%;
 	}
 }
