@@ -9,12 +9,14 @@ import AboutSection from "@/app/Components/AboutSection";
 import ContactMe from "@/app/Components/ContactMe";
 import {DEFAULT_WHATSAPP_MESSAGE, DEFAULT_WHATSAPP_URL} from "@/lib/constants";
 import Script from 'next/script';
+import OurTeam from "@/app/Components/OurTeam";
 
 const HomePage = () => {
   return (
       <div>
         <Hero />
         <WhatOfferSection />
+        <OurTeam />
         <PricingSection whatsAppUrl={DEFAULT_WHATSAPP_URL} />
         <AboutSection />
         <ContactMe />
