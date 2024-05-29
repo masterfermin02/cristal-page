@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from "next/image";
-import { DEFAULT_WHATSAPP_MESSAGE } from '@/lib/constants';
+
+const DEFAULT_WHATSAPP_MESSAGE = 'Hola me interesa conocer sus planes para entrenamiento presencial en Good Shape y su disponibilidad. Mensaje enviado desde el sitio web.';
 
 const TeamSection = () => {
     return (
@@ -14,15 +15,17 @@ const TeamSection = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col">
+                    <div className="col-lg-4 col-md-6 col-sm-12">
                         <div className="card shadow-sm">
-                            <Image
+                            <div style={{ position: 'relative', width: '100%', height: '325px' }}>
+                                <Image
                                     src="/../assets/img/team/cristal.jpeg"
                                     alt="Cristal coach"
-                                    width={423}
-                                    height={425}
-                                    sizes="(max-width: 423px) 100vw, 33vw"
-                                />
+                                    layout='fill'
+                                    objectFit='cover'
+                                    objectPosition='top'
+                                    />
+                            </div>
                             <div className="card-body">
                                 <h2>Cristal Lopez</h2>
                                 <p className="card-text">
@@ -37,21 +40,23 @@ const TeamSection = () => {
                                 </p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <a href="#planes" className="btn btn-sm btn-outline-secondary">Ver plan</a>
+                                        <a href="#planes" className="btn btn-sm btn-outline-secondary">Ver planes</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div className="card shadow-sm">
-                            <Image
+                            <div style={{ position: 'relative', width: '100%', height: '325px' }}>
+                                <Image
                                     src="/../assets/img/team/yoedy.jpeg"
                                     alt="Yoedy coach"
-                                    width={423}
-                                    height={425}
-                                    sizes="(max-width: 423px) 100vw, 33vw"
+                                    layout='fill'
+                                    objectFit='cover'
+                                    objectPosition='top'
                                 />
+                            </div>
                             <div className="card-body">
                                 <h2>Yoedy Bernard</h2>
                                 <p className="card-text">
@@ -69,15 +74,17 @@ const TeamSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div className="card shadow-sm">
-                        <Image
+                            <div style={{ position: 'relative', width: '100%', height: '325px' }}>
+                                <Image
                                     src="/../assets/img/team/aldo-perez.jpeg"
-                                    alt="Yoedy coach"
-                                    width={423}
-                                    height={425}
-                                    sizes="(max-width: 423px) 100vw, 33vw"
+                                    alt="Aldo coach"
+                                    layout='fill'
+                                    objectFit='cover'
+                                    objectPosition='top'
                                 />
+                            </div>
                             <div className="card-body">
                                 <h2>Aldo Pérez</h2>
                                 <p className="card-text">
@@ -96,19 +103,15 @@ const TeamSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="row pt-4">
-                    <div className="col">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div className="card shadow-sm">
-                            <div style={{ maxHeight: '500px', overflow: 'hidden' }}>
+                            <div style={{ position: 'relative', width: '100%', height: '325px' }}>
                                 <Image
                                         src="/../assets/img/team/joan-2.jpeg"
-                                        alt="Yoedy coach"
-                                        width={223}
-                                        height={225}
-                                        layout='responsive'
+                                        alt="Joan coach"
+                                        layout='fill'
                                         objectFit='cover'
-                                        sizes="(max-width: 423px) 100vw, 33vw"
+                                        objectPosition='top'
                                     />
                             </div>
                             <div className="card-body">
@@ -128,16 +131,15 @@ const TeamSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
                         <div className="card shadow-sm">
-                            <div style={{ maxHeight: '500px', overflow: 'hidden' }}>
+                            <div style={{ position: 'relative', width: '100%', height: '325px' }}>
                                 <Image
                                         src="/../assets/img/team/elvissaul.jpeg"
-                                        alt="Yoedy coach"
-                                        width={223}
-                                        height={225}
-                                        layout='responsive'
+                                        alt="Saul coach"
+                                        layout='fill'
                                         objectFit='cover'
+                                         objectPosition='top'
                                     />
                             </div>
                             <div className="card-body">
