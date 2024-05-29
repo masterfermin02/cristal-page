@@ -98,15 +98,19 @@ const TeamSection = () => {
                     </div>
                 </div>
                 <div className="row pt-4">
-                    <div className="col-4">
+                    <div className="col">
                         <div className="card shadow-sm">
-                            <Image
-                                    src="/../assets/img/team/joan-2.jpeg"
-                                    alt="Yoedy coach"
-                                    width={423}
-                                    height={425}
-                                    sizes="(max-width: 423px) 100vw, 33vw"
-                                />
+                            <div style={{ maxHeight: '500px', overflow: 'hidden' }}>
+                                <Image
+                                        src="/../assets/img/team/joan-2.jpeg"
+                                        alt="Yoedy coach"
+                                        width={223}
+                                        height={225}
+                                        layout='responsive'
+                                        objectFit='cover'
+                                        sizes="(max-width: 423px) 100vw, 33vw"
+                                    />
+                            </div>
                             <div className="card-body">
                                 <h2>Joan Guzman</h2>
                                 <p className="card-text">
@@ -124,15 +128,18 @@ const TeamSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col">
                         <div className="card shadow-sm">
-                            <Image
-                                    src="/../assets/img/team/elvissaul.jpeg"
-                                    alt="Yoedy coach"
-                                    width={423}
-                                    height={425}
-                                    sizes="(max-width: 423px) 100vw, 33vw"
-                                />
+                            <div style={{ maxHeight: '500px', overflow: 'hidden' }}>
+                                <Image
+                                        src="/../assets/img/team/elvissaul.jpeg"
+                                        alt="Yoedy coach"
+                                        width={223}
+                                        height={225}
+                                        layout='responsive'
+                                        objectFit='cover'
+                                    />
+                            </div>
                             <div className="card-body">
                                 <h2>Elvisaul Núñez</h2>
                                 <p className="card-text">
