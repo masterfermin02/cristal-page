@@ -40,7 +40,7 @@ const TeamSection = () => {
                                 </p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <a href="#planes" className="btn btn-sm btn-outline-secondary">Ver planes</a>
+                                        <a href="/plans#planes" className="btn btn-sm btn-outline-secondary">Ver planes</a>
                                     </div>
                                 </div>
                             </div>

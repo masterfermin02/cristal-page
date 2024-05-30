@@ -30,7 +30,7 @@ export const Menu = ({
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/">Inicio</a></li>
-                                        <li><a href="#planes">Planes</a></li>
+                                        <li><a href="#our-team">Nuestro Equipo</a></li>
                                         <li><a href="#sobre-me">Sobre mi</a></li>
                                         <li><a href="#contact">Contacto</a></li>
                                     </ul>
