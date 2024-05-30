@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import PricingSection from "@/app/Components/PricingSection";
 import ServiceSection from "@/app/Components/ServiceSection";
 import AboutSection from "@/app/Components/AboutSection";
@@ -9,12 +9,25 @@ import { DEFAULT_WHATSAPP_URL } from "@/lib/constants";
 
 export default function ContentSection() {
   const [seePlans, setSeePlans] = useState(false);
+  const sectionRef = React.useRef(null);
+  const teamRef = React.useRef(null);
+
+  useEffect(() => {
+    if (seePlans && sectionRef.current) {
+      sectionRef.current.scrollIntoView({behavior: "smooth"});
+    }
+
+    if (!seePlans && teamRef.current) {
+      teamRef.current.scrollIntoView({behavior: "smooth"});
+    }
+
+  }, [seePlans]);
 
   return (
     <>
-      {!seePlans && <OurTeam seePlanCristalClick={() => setSeePlans(true)} />}
+      {!seePlans && <OurTeam ref={teamRef} seePlanCristalClick={() => setSeePlans(true)} />}
         {!seePlans && <ServiceSection />}
-        {seePlans && <PricingSection whatsAppUrl={DEFAULT_WHATSAPP_URL} />}
+        {seePlans && <PricingSection ref={sectionRef} whatsAppUrl={DEFAULT_WHATSAPP_URL} />}
         {seePlans && <section id={'planes'} className="pricing-area section-padding40 fix">
             <div className="container">
                 <div className="row">

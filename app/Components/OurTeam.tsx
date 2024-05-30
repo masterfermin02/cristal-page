@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Image from "next/image";
 
 const DEFAULT_WHATSAPP_MESSAGE = 'Hola me interesa conocer sus planes para entrenamiento presencial en Good Shape y su disponibilidad. Mensaje enviado desde el sitio web.';
 
-const TeamSection = ({
-    seePlanCristalClick
-}: {
-    seePlanCristalClick: () => void;
-}) => {
+const TeamSection = forwardRef((props, ref) => {
+    const { seePlanCristalClick } = props;
+    
     return (
-        <section id="our-team" className="team-area fix p-4">
+        <section id="our-team" ref={ref} className="team-area fix p-4">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12">
@@ -168,6 +166,6 @@ const TeamSection = ({
             </div>
         </section>
     );
-};
+});
 
 export default TeamSection;

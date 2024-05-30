@@ -3,12 +3,14 @@ import SingleFeature from "@/app/Components/SingleFeature";
 import {createMessage} from "@/lib/whatsapp";
 
 const PricingSection = ({ 
-    whatsAppUrl
+    whatsAppUrl,
+    ref,
 }: {
-    whatsAppUrl: string
+    whatsAppUrl: string;
+    ref: any;
 }) => {
     return (
-        <section id={'planes'} className="pricing-area section-padding40 fix">
+        <section id={'planes'} ref={ref} className="pricing-area section-padding40 fix">
             <div className="container">
                 <div className="row">
                     <div className="col-xl-12">
