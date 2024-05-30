@@ -2,7 +2,8 @@ import React from 'react';
 import SingleFeature from "@/app/Components/SingleFeature";
 import {createMessage} from "@/lib/whatsapp";
 
-const PricingSection = ({ whatsAppUrl
+const PricingSection = ({ 
+    whatsAppUrl
 }: {
     whatsAppUrl: string
 }) => {

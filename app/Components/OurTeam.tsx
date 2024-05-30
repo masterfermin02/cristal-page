@@ -3,7 +3,11 @@ import Image from "next/image";
 
 const DEFAULT_WHATSAPP_MESSAGE = 'Hola me interesa conocer sus planes para entrenamiento presencial en Good Shape y su disponibilidad. Mensaje enviado desde el sitio web.';
 
-const TeamSection = () => {
+const TeamSection = ({
+    seePlanCristalClick
+}: {
+    seePlanCristalClick: () => void;
+}) => {
     return (
         <section id="our-team" className="team-area fix p-4">
             <div className="container">
@@ -40,7 +44,7 @@ const TeamSection = () => {
                                 </p>
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div className="btn-group">
-                                        <a href="/plans#planes" className="btn btn-sm btn-outline-secondary">Ver planes</a>
+                                        <button type='button' onClick={seePlanCristalClick} className="btn btn-sm btn-outline-secondary">Ver planes</button>
                                     </div>
                                 </div>
                             </div>
