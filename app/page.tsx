@@ -6,6 +6,7 @@ import {DEFAULT_WHATSAPP_MESSAGE, DEFAULT_WHATSAPP_URL} from "@/lib/constants";
 import Script from 'next/script';
 import { useState } from 'react';
 import ContentSection from "./Components/ContentSection";
+import RentOurLocal from "./Components/RentOurLocal";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
         <Hero />
         <WhatOfferSection />
         <ContentSection />
+        <RentOurLocal />
         <ContactMe />
       </div>
   );
