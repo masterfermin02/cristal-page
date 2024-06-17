@@ -1,11 +1,14 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, Ref } from 'react';
 import Image from "next/image";
 
 const DEFAULT_WHATSAPP_MESSAGE = 'Hola me interesa conocer sus planes para entrenamiento presencial en Good Shape y su disponibilidad. Mensaje enviado desde el sitio web.';
 
-const TeamSection = forwardRef((props, ref) => {
-    const { seePlanCristalClick } = props;
-    
+interface OurTeamProps {
+    ref: Ref<HTMLElement>;
+    seePlanCristalClick: () => void;
+  }
+
+const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
     return (
         <section id="our-team" ref={ref} className="team-area fix p-4">
             <div className="container">

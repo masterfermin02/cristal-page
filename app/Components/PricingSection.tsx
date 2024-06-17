@@ -7,7 +7,7 @@ const PricingSection = ({
     ref,
 }: {
     whatsAppUrl: string;
-    ref: any;
+    ref?: any;
 }) => {
     return (
         <section id={'planes'} ref={ref} className="pricing-area section-padding40 fix">

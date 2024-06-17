@@ -9,8 +9,8 @@ import { DEFAULT_WHATSAPP_URL } from "@/lib/constants";
 
 export default function ContentSection() {
   const [seePlans, setSeePlans] = useState(false);
-  const sectionRef = React.useRef(null);
-  const teamRef = React.useRef(null);
+  const sectionRef = React.useRef<HTMLDivElement>(null);
+  const teamRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (seePlans && sectionRef.current) {
