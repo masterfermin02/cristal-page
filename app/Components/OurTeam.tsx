@@ -83,35 +83,6 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                         <div className="card shadow-sm">
                             <div style={{ position: 'relative', width: '100%', height: '325px' }}>
                                 <Image
-                                    src="/../assets/img/team/aldo-perez.jpeg"
-                                    alt="Aldo coach"
-                                    layout='fill'
-                                    objectFit='cover'
-                                    objectPosition='top'
-                                />
-                            </div>
-                            <div className="card-body">
-                                <h2>Aldo Pérez</h2>
-                                <p className="card-text">
-                                    <ul>
-                                        <li>- Certificación internacional por la Ifbb academy</li>
-                                        <li>- Certificado en nutrición CIFMEC</li>
-                                        <li>- Certificado por la NSPC (National strength program for coaches))</li>
-                                        <li>- Certificado en varios talleres deportivos y de nutrición</li>
-                                    </ul>
-                                </p>
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div className="btn-group">
-                                        <a href={`https://wa.me/+18298736377?text=${DEFAULT_WHATSAPP_MESSAGE}`} className="btn btn-sm btn-outline-secondary">Ver planes</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
-                        <div className="card shadow-sm">
-                            <div style={{ position: 'relative', width: '100%', height: '325px' }}>
-                                <Image
                                         src="/../assets/img/team/joan-2.jpeg"
                                         alt="Joan coach"
                                         layout='fill'
