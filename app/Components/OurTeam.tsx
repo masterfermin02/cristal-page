@@ -107,36 +107,6 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
-                        <div className="card h-100 shadow-sm">
-                            <div style={{ position: 'relative', width: '100%', height: '325px', backgroundColor: 'black' }}>
-                                <Image
-                                        src="/../assets/img/team/daniel.png"
-                                        alt="Daniel coach"
-                                        layout='fill'
-                                        objectFit='cover'
-                                         objectPosition='top'
-                                    />
-                            </div>
-                            <div className="card-body d-flex flex-column">
-                                <h2>Daniel Roca</h2>
-                                <div className="card-text flex-grow-1">
-                                    <ul>
-                                        <li>- Licenciado en nutrición y dietética </li>
-                                        <li>- Entrenador personal certificado (Mega)</li>
-                                        <li>- Certificación en entrenamiento funcional (Mega)</li>
-                                        <li>- Certificación en nutrición deportiva (cienut)</li>
-                                        <li>- Cursos de antropometría (isak)</li>
-                                    </ul>
-                                </div>
-                                <div className="mt-3">
-                                    <div className="btn-group">
-                                        <a href={`https://wa.me/+18092815102?text=${DEFAULT_WHATSAPP_MESSAGE}`} className="btn btn-sm btn-outline-secondary">Ver planes</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
