@@ -20,7 +20,7 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-12">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div className="card h-100 shadow-sm">
                             <div style={{ position: 'relative', width: '100%', height: '325px' }}>
                                 <Image
@@ -28,7 +28,7 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                                     alt="Cristal coach"
                                     layout='fill'
                                     objectFit='cover'
-                                    objectPosition='top'
+                                    objectPosition='center 10px'
                                     />
                             </div>
                             <div className="card-body d-flex flex-column">
@@ -51,15 +51,15 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div className="card h-100 shadow-sm">
                             <div style={{ position: 'relative', width: '100%', height: '325px' }}>
                                 <Image
-                                    src="/../assets/img/team/yoedy.jpeg"
+                                    src="/../assets/img/team/joedy_natasha.jpeg"
                                     alt="Yoedy coach"
                                     layout='fill'
                                     objectFit='cover'
-                                    objectPosition='top'
+                                    objectPosition='center 10px'
                                 />
                             </div>
                             <div className="card-body d-flex flex-column">
@@ -79,7 +79,7 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div className="col-lg-4 col-md-6 col-sm-12 mb-4">
                         <div className="card h-100 shadow-sm">
                             <div style={{ position: 'relative', width: '100%', height: '325px' }}>
                                 <Image
@@ -87,7 +87,7 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                                         alt="Joan coach"
                                         layout='fill'
                                         objectFit='cover'
-                                        objectPosition='top'
+                                        objectPosition='center 10px'
                                     />
                             </div>
                             <div className="card-body d-flex flex-column">
