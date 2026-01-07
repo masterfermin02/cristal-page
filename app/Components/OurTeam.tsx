@@ -1,14 +1,14 @@
 import React, { forwardRef, Ref } from 'react';
 import Image from "next/image";
 
-const DEFAULT_WHATSAPP_MESSAGE = 'Hola me interesa conocer sus planes para entrenamiento presencial en Good Shape y su disponibilidad. Mensaje enviado desde el sitio web.';
-
 interface OurTeamProps {
     ref: Ref<HTMLElement>;
     seePlanCristalClick: () => void;
+        seePlanYoedyClick: () => void;
+    seePlanJoanClick: () => void;
   }
 
-const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
+const TeamSection = forwardRef(({ seePlanCristalClick, seePlanYoedyClick, seePlanJoanClick, ref }: OurTeamProps) => {
     return (
         <section id="our-team" ref={ref} className="team-area fix p-4">
             <div className="container">
@@ -73,7 +73,7 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                                 </div>
                                 <div className="mt-3">
                                     <div className="btn-group">
-                                    <a href={`https://wa.me/+18493766655?text=${DEFAULT_WHATSAPP_MESSAGE}`} className="btn btn-sm btn-outline-secondary">Ver planes</a>
+                                        <button type='button' onClick={seePlanYoedyClick} className="btn btn-sm btn-outline-secondary">Ver planes</button>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ const TeamSection = forwardRef(({ seePlanCristalClick, ref }: OurTeamProps) => {
                                 </div>
                                 <div className="mt-3">
                                     <div className="btn-group">
-                                        <a href={`https://wa.me/+18297803248?text=${DEFAULT_WHATSAPP_MESSAGE}`} className="btn btn-sm btn-outline-secondary">Ver planes</a>
+                                        <button type='button' onClick={seePlanJoanClick} className="btn btn-sm btn-outline-secondary">Ver planes</button>
                                     </div>
                                 </div>
                             </div>
