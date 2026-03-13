@@ -1,36 +1,40 @@
-import React from 'react';
-
 const RentOurLocal = () => {
-    return (
-        <section id="rent-our-local" className="team-area fix">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xl-12">
-                        <div className="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                            <h2>Alquila Nuestro Espacio</h2>
-                        </div>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col-xl-12'>
-                        <div className="section-tittle2 mb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                            <div className="front-text about-me text-sm-left text-md-left">
-                                <p>
-                                    Debido a la ubicación estratégica y fácil acceso que tenemos, nuestro espacio se presta
-                                    para ser utilizado para charlas, cursos, talleres, o capacitaciones con capacidad para más de 50 personas.
-                                </p>
-                                <p>
-                                    Disponible viernes, sábados y domingos (agenda con nosotros al menos 15 días antes).
-                                </p>
-                                <p>- 8 horas: $ 350</p>
-                                <p>- 12 horas: $ 500</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section id="rent-our-local" className="section-shell py-20">
+      <div className="glass-panel grid gap-8 p-8 lg:grid-cols-[1fr_0.8fr] lg:p-10">
+        <div>
+          <span className="section-kicker">Alquila nuestro espacio</span>
+          <h2 className="section-title mt-5">Disponible para talleres y charlas.</h2>
+          <div className="mt-6 space-y-4 text-base leading-7">
+            <p className="text-[#d2c6c3]">
+              Debido a la ubicacion estrategica y facil acceso que tenemos, nuestro espacio
+              se presta para charlas, cursos, talleres y capacitaciones.
+            </p>
+            <p className="text-[#d2c6c3]">Capacidad para mas de 50 personas.</p>
+            <p className="text-[#d2c6c3]">
+              Disponible viernes, sabados y domingos con al menos 15 dias de anticipacion.
+            </p>
+          </div>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="stack-card">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#fe0000]">
+              Jornada corta
+            </p>
+            <p className="mt-3 font-headline text-4xl font-extrabold text-white">$350</p>
+            <p className="mt-2 text-sm text-[#f0e4e1]">8 horas</p>
+          </div>
+          <div className="stack-card">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#fe0000]">
+              Jornada extendida
+            </p>
+            <p className="mt-3 font-headline text-4xl font-extrabold text-white">$500</p>
+            <p className="mt-2 text-sm text-[#f0e4e1]">12 horas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default RentOurLocal;

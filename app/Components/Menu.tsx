@@ -1,54 +1,34 @@
-import Image from "next/image";
-
 export const Menu = ({
- whatsAppUrl,
- message
+  whatsAppUrl,
+  message,
 }: {
-    whatsAppUrl: string;
-    message: string;
+  whatsAppUrl: string;
+  message: string;
 }) => {
-    return (
-        <header>
-            {/* Header Start */}
-            <div className="header-area header-transparent">
-                <div className="main-header header-sticky">
-                    <div className="container-fluid">
-                        <div className="menu-wrapper d-flex align-items-center justify-content-between">
-                            {/* Logo */}
-                            <div className="logo">
-                                <a href="/">
-                                    <img
-                                        className={'menu-logo'}
-                                        src="/assets/img/logo/good-shape-logo-04.png"
-                                        alt=""
-                                        height={80}
-                                    />
-                                </a>
-                            </div>
-                            {/* Main-menu */}
-                            <div className="main-menu f-right d-none d-lg-block">
-                                <nav>
-                                    <ul id="navigation">
-                                        <li><a href="/">Inicio</a></li>
-                                        <li><a href="#our-team">Nuestro Equipo</a></li>
-                                        <li><a href="#sobre-me">Sobre mi</a></li>
-                                        <li><a href="#contact">Contacto</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            {/* Header-btn */}
-                            <div className="header-btns d-none d-lg-block f-right">
-                                <a href={whatsAppUrl + message} target={'_blank'} className="btn">Unete Ya!</a>
-                            </div>
-                            {/* Mobile Menu */}
-                            <div className="col-12">
-                                <div className="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* Header End */}
-        </header>
-    );
+  return (
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/80 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="/" className="text-2xl font-black italic tracking-tighter text-white hover:text-white">
+          GOOD<span className="text-[#fe0000]">SHAPE</span>
+        </a>
+        <nav className="hidden items-center gap-7 text-sm font-semibold uppercase tracking-[0.18em] text-[#d3caca] lg:flex">
+          <a href="/#hero" className="transition hover:text-[#fe0000]">
+            Inicio
+          </a>
+          <a href="/#what-we-offer" className="transition hover:text-[#fe0000]">
+            Ecosistema
+          </a>
+          <a href="/#our-team" className="transition hover:text-[#fe0000]">
+            Equipo
+          </a>
+          <a href="/#contact" className="transition hover:text-[#fe0000]">
+            Contacto
+          </a>
+        </nav>
+        <a href={whatsAppUrl + message} target="_blank" className="primary-cta px-5 py-3 text-xs">
+          Unete Ya
+        </a>
+      </div>
+    </header>
+  );
 };

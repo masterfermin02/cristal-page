@@ -1,21 +1,10 @@
-import { Hero } from "@/app/Components/Hero";
+import Script from "next/script";
 import { Menu } from "@/app/Components/Menu";
 import PricingSection from "@/app/Components/PricingSection";
 import ContactMe from "@/app/Components/ContactMe";
 import { DEFAULT_WHATSAPP_MESSAGE, DEFAULT_WHATSAPP_URL } from "@/lib/constants";
-import Script from "next/script";
 
-const HomePage = () => {
-  return (
-    <div className="pb-12">
-      <Hero />
-      <PricingSection whatsAppUrl={DEFAULT_WHATSAPP_URL} />
-      <ContactMe />
-    </div>
-  );
-};
-
-export default async function Page() {
+export default function Page() {
   return (
     <div>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-GGH6RKNP9W" />
@@ -28,7 +17,21 @@ export default async function Page() {
         `}
       </Script>
       <Menu whatsAppUrl={DEFAULT_WHATSAPP_URL} message={DEFAULT_WHATSAPP_MESSAGE} />
-      <HomePage />
+      <div className="pb-12">
+        <section className="bg-[#080808] pt-28">
+          <div className="section-shell pb-6">
+            <a
+              href="/#our-team"
+              className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.22em] text-[#d2c6c3] transition hover:text-[#fe0000]"
+            >
+              <span aria-hidden="true">←</span>
+              Volver al equipo
+            </a>
+          </div>
+        </section>
+        <PricingSection whatsAppUrl={DEFAULT_WHATSAPP_URL} />
+        <ContactMe />
+      </div>
     </div>
   );
 }

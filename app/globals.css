@@ -1,7 +1,154 @@
-@import 'bootstrap/dist/css/bootstrap.css';
+@import "bootstrap/dist/css/bootstrap.css";
 @import "assets/css/slicknav.css";
 @import "assets/css/animate.min.css";
 @import "assets/css/animated-headline.css";
 @import "assets/css/magnific-popup.css";
 @import "assets/css/slick.css";
 @import "assets/css/nice-select.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0a0a0a] text-[#fff7f5] antialiased;
+    background-image:
+      radial-gradient(circle at top, rgba(254, 0, 0, 0.12), transparent 22%),
+      radial-gradient(circle at bottom right, rgba(179, 60, 42, 0.12), transparent 18%),
+      linear-gradient(180deg, #060606 0%, #0b0b0b 100%);
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  * {
+    @apply border-[#ffffff12];
+  }
+}
+
+@layer components {
+  .site-shell {
+    @apply relative overflow-hidden;
+  }
+
+  .site-shell::before {
+    content: "";
+    @apply pointer-events-none fixed inset-0;
+    background:
+      radial-gradient(circle, rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+    background-size: 64px 64px;
+    opacity: 0.18;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent 92%);
+  }
+
+  .section-shell {
+    @apply relative mx-auto w-full max-w-7xl px-6 lg:px-10;
+  }
+
+  .section-kicker {
+    @apply inline-flex items-center gap-2 rounded-full border border-[#ffffff18] bg-[#ffffff0a] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#fe0000];
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-black uppercase italic leading-[0.92] text-white md:text-5xl lg:text-6xl;
+  }
+
+  .section-copy {
+    @apply max-w-2xl text-base leading-7 text-[#d4c8c5] md:text-lg;
+  }
+
+  .glass-panel {
+    @apply rounded-[28px] border border-[#ffffff10] bg-[#121212] shadow-[0_20px_60px_rgba(0,0,0,0.35)];
+  }
+
+  .primary-cta {
+    @apply inline-flex items-center justify-center rounded-full bg-[#fe0000] px-7 py-4 text-sm font-black uppercase tracking-[0.2em] text-white transition duration-300 hover:scale-[1.03] hover:bg-[#da0000] hover:text-white;
+    box-shadow: 0 0 18px rgba(254, 0, 0, 0.35);
+  }
+
+  .secondary-cta {
+    @apply inline-flex items-center justify-center rounded-full border border-[#ffffff20] bg-[#ffffff08] px-7 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white transition duration-300 hover:border-[#fe0000] hover:text-white;
+  }
+
+  .metric-card {
+    @apply glass-panel p-5;
+  }
+
+  .stack-card {
+    @apply glass-panel h-full p-7 transition duration-300 hover:-translate-y-1 hover:border-[#fe000066];
+  }
+
+  .coach-card {
+    @apply relative overflow-hidden rounded-[28px] border border-[#ffffff12] bg-[#101010];
+  }
+
+  .coach-card::after {
+    content: "";
+    @apply absolute inset-0;
+    background: linear-gradient(180deg, transparent 34%, rgba(5, 5, 5, 0.96) 100%);
+  }
+
+  .plan-card {
+    @apply glass-panel h-full p-8;
+  }
+
+  .feature-row {
+    @apply flex items-start gap-3 text-sm leading-6;
+  }
+
+  .feature-dot {
+    @apply mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#fe0000];
+  }
+
+  .text-accent-gradient {
+    background: linear-gradient(to right, #ffffff, #fe0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .loader-pulse {
+    animation: loader-pulse 1.8s ease-in-out infinite;
+  }
+
+  .loader-bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, transparent 0%, #fe0000 25%, #ffffff 50%, #fe0000 75%, transparent 100%);
+    animation: loader-slide 1.6s linear infinite;
+  }
+}
+
+@keyframes loader-pulse {
+  0%,
+  100% {
+    transform: scale(0.98);
+    opacity: 0.88;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes loader-slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

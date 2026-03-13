@@ -1,16 +1,20 @@
-import type { Config } from 'tailwindcss'
-import typography from '@tailwindcss/typography'
+import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 export default {
   content: [
-    './app/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './lib/**/*.{ts,tsx}',
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./lib/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ["var(--font-inter)"],
+        body: ["var(--font-inter)"],
+        headline: ["var(--font-inter)"],
+        label: ["var(--font-inter)"],
+        display: ["Impact", "Haettenschweiler", "Arial Narrow Bold", "sans-serif"],
       },
     },
   },
@@ -18,4 +22,4 @@ export default {
     hoverOnlyWhenSupported: true,
   },
   plugins: [typography],
-} satisfies Config
+} satisfies Config;

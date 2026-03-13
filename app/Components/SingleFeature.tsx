@@ -1,14 +1,8 @@
-import React from "react";
-
 export default function SingleFeature({ label }: { label: string }) {
   return (
-    <div className="single-features">
-        <div className="features-icon">
-        <img src="../assets/img/icon/check.svg" alt="" />
-        </div>
-        <div className="features-caption">
-            <p>{label}</p>
-        </div>
+    <div className="feature-row">
+      <span className="feature-dot" />
+      <p className="text-inherit">{label}</p>
     </div>
-  )
+  );
 }
