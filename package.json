@@ -1,9 +1,5 @@
 {
   "private": true,
-  "engines": {
-    "node": "25.2.1"
-  },
-  "packageManager": "npm@11.6.2",
   "scripts": {
     "dev": "next",
     "build": "next build",
