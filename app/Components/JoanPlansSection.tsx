@@ -1,6 +1,6 @@
 "use client";
 
-import { forwardRef } from "react";
+import { forwardRef, useRef } from "react";
 import SingleFeature from "@/app/Components/SingleFeature";
 import { createMessage } from "@/lib/whatsapp";
 import { gsap } from "gsap";
@@ -14,6 +14,8 @@ const plans = [
 ];
 
 const JoanPlansSection = forwardRef<HTMLElement, { whatsAppUrl: string }>(({ whatsAppUrl }, ref) => {
+  const root = useRef<HTMLElement | null>(null);
+
   registerGsap();
 
   useGSAP(
@@ -35,11 +37,24 @@ const JoanPlansSection = forwardRef<HTMLElement, { whatsAppUrl: string }>(({ wha
         },
       });
     },
-    { scope: ref },
+    { scope: root },
   );
 
+  const setSectionRef = (node: HTMLElement | null) => {
+    root.current = node;
+
+    if (typeof ref === "function") {
+      ref(node);
+      return;
+    }
+
+    if (ref) {
+      ref.current = node;
+    }
+  };
+
   return (
-    <section id="planes" ref={ref} data-gsap="joan-plans-root" className="bg-[#080808] py-20">
+    <section id="planes" ref={setSectionRef} data-gsap="joan-plans-root" className="bg-[#080808] py-20">
       <div className="section-shell">
         <div className="mb-12">
           <span className="section-kicker">Planes Joan</span>
