@@ -2,7 +2,7 @@
 .about-area2{
 	.support-wrapper{
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		flex-wrap: wrap;
 		@media #{$lg}{
 			display: block;

@@ -7,7 +7,7 @@
         align-items: center;
 -webkit-box-pack: start;
     -ms-flex-pack: start;
-        justify-content: start;
+        justify-content: flex-start;
 }
 
 %overlay{
@@ -63,4 +63,3 @@
 //   @extend %gallery;
 
 // }
-
