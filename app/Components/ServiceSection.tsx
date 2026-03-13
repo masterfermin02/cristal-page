@@ -1,10 +1,24 @@
 "use client";
 
 import SingleFeature from "@/app/Components/SingleFeature";
+import { createMessage } from "@/lib/whatsapp";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { registerGsap, shouldReduceMotion } from "@/lib/gsap";
+import { DEFAULT_WHATSAPP_URL } from "@/lib/constants";
+
+const featuredService = {
+  name: "Plan Yo Perreo Sol@",
+  price: "RD$3,000",
+  eyebrow: "Libre",
+  features: [
+    "EVALUACION INICIAL",
+    "ACCESO A LAS INSTALACIONES RESPETANDO SU HORARIO ASIGNADO, EN CASO DE NECESITAR CAMBIO DE HORARIO DURANTE EL MES CONFIRMAR DISPONIBILIDAD",
+    "GUIA O AYUDA DEL PERSONAL CAPACITADO SI LO REQUIERE",
+    "1 EVALUACION DE SEGUIMIENTO GRATIS A LOS 3 MESES CONSECUTIVOS",
+  ],
+};
 
 const serviceColumns = [
   {
@@ -85,6 +99,40 @@ const ServicesSection = () => {
             Complementos que elevan el entrenamiento, la recuperacion y el seguimiento.
           </p>
         </div>
+
+        <article
+          data-gsap="service-card"
+          className="relative mb-6 overflow-hidden rounded-[28px] border border-[#fe0000]/40 bg-gradient-to-r from-[#1a0a0a] via-[#111111] to-[#0f0f0f] p-7"
+        >
+          <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#fe0000] to-transparent" />
+          <div className="grid gap-8 xl:grid-cols-[1.1fr_1.4fr] xl:items-start">
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#fe0000]">
+                {featuredService.eyebrow}
+              </p>
+              <h3 className="mt-3 font-display text-3xl uppercase italic text-white md:text-4xl">
+                {featuredService.name}
+              </h3>
+              <p className="mt-5 font-display text-4xl font-black uppercase italic text-white md:text-5xl">
+                {featuredService.price}
+              </p>
+              <a
+                href={DEFAULT_WHATSAPP_URL + createMessage(featuredService.name)}
+                target="_blank"
+                className="primary-cta mt-8 inline-flex"
+              >
+                Ver disponibilidad
+              </a>
+            </div>
+            <div className="border-t border-white/10 pt-6 xl:border-l xl:border-t-0 xl:pl-8 xl:pt-0">
+              <div className="space-y-4 text-[#d2c6c3]">
+                {featuredService.features.map((feature) => (
+                  <SingleFeature key={feature} label={feature} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </article>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {serviceColumns.map((column) => (
