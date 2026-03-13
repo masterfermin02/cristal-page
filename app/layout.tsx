@@ -1,6 +1,5 @@
 import "./globals.css";
 import "./assets/scss/style.scss";
-import { Inter } from "next/font/google";
 import { DEFAULT_WHATSAPP_MESSAGE, DEFAULT_WHATSAPP_URL } from "@/lib/constants";
 import SplashScreen from "@/app/Components/SplashScreen";
 
@@ -8,12 +7,6 @@ export const metadata = {
   title: "Good shape",
   description: "Good shape gym page.",
 };
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 function Footer() {
   return (
@@ -71,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en">
       <body className="font-body">
         <SplashScreen />
         <section className="site-shell min-h-screen">

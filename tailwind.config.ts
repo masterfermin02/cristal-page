@@ -10,10 +10,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)"],
-        body: ["var(--font-inter)"],
-        headline: ["var(--font-inter)"],
-        label: ["var(--font-inter)"],
+        sans: ["Helvetica Neue", "Arial", "sans-serif"],
+        body: ["Helvetica Neue", "Arial", "sans-serif"],
+        headline: ["Helvetica Neue", "Arial", "sans-serif"],
+        label: ["Helvetica Neue", "Arial", "sans-serif"],
         display: ["Impact", "Haettenschweiler", "Arial Narrow Bold", "sans-serif"],
       },
     },
