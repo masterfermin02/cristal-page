@@ -1,3 +1,13 @@
+import { DEFAULT_WHATSAPP_URL } from "@/lib/constants";
+
+const RENT_MESSAGE_CORTA = encodeURIComponent(
+  "Hola, estoy interesado/a en alquilar su espacio para un taller o charla. Me gustaría consultar disponibilidad para la Jornada Corta (8 horas - $350). Mensaje enviado desde el sitio web.",
+);
+
+const RENT_MESSAGE_EXTENDIDA = encodeURIComponent(
+  "Hola, estoy interesado/a en alquilar su espacio para un taller o charla. Me gustaría consultar disponibilidad para la Jornada Extendida (12 horas - $500). Mensaje enviado desde el sitio web.",
+);
+
 const RentOurLocal = () => {
   return (
     <section id="rent-our-local" className="section-shell py-20">
@@ -17,20 +27,30 @@ const RentOurLocal = () => {
           </div>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-          <div className="stack-card">
+          <a
+            href={DEFAULT_WHATSAPP_URL + RENT_MESSAGE_CORTA}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="stack-card block transition-opacity hover:opacity-80"
+          >
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#fe0000]">
               Jornada corta
             </p>
             <p className="mt-3 font-headline text-4xl font-extrabold text-white">$350</p>
             <p className="mt-2 text-sm text-[#f0e4e1]">8 horas</p>
-          </div>
-          <div className="stack-card">
+          </a>
+          <a
+            href={DEFAULT_WHATSAPP_URL + RENT_MESSAGE_EXTENDIDA}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="stack-card block transition-opacity hover:opacity-80"
+          >
             <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#fe0000]">
               Jornada extendida
             </p>
             <p className="mt-3 font-headline text-4xl font-extrabold text-white">$500</p>
             <p className="mt-2 text-sm text-[#f0e4e1]">12 horas</p>
-          </div>
+          </a>
         </div>
       </div>
     </section>

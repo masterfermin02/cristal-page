@@ -202,8 +202,8 @@ export function Hero() {
             <p className="mt-2 text-xs uppercase tracking-[0.18em] text-[#fe0000]">Coaches</p>
           </div>
           <div data-gsap="hero-metric" className="metric-card">
-            <p className="text-3xl font-black text-white">+50</p>
-            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-[#fe0000]">Eventos</p>
+            <p className="text-3xl font-black text-white">+200</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-[#fe0000]">Miembros</p>
           </div>
           <div data-gsap="hero-metric" className="metric-card">
             <p className="text-3xl font-black text-white">1:1</p>

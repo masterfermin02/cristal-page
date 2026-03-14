@@ -157,7 +157,7 @@ export default function SplashScreen() {
         >
           Good Shape Santiago
         </p>
-        <div className="mt-5 overflow-hidden">
+        <div className="mt-5">
           <h1 className="font-display text-5xl uppercase italic leading-none tracking-tight text-white md:text-7xl">
             <span data-loader="wordmark-left">GOOD</span>
             <span data-loader="wordmark-right" className="ml-2 text-[#fe0000]">

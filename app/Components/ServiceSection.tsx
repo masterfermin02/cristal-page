@@ -14,8 +14,9 @@ const featuredService = {
   eyebrow: "Libre",
   features: [
     "EVALUACION INICIAL",
+    "PLAN PARA PERSONA CON EXPERIENCIA PREVIA",
     "ACCESO A LAS INSTALACIONES RESPETANDO SU HORARIO ASIGNADO, EN CASO DE NECESITAR CAMBIO DE HORARIO DURANTE EL MES CONFIRMAR DISPONIBILIDAD",
-    "GUIA O AYUDA DEL PERSONAL CAPACITADO SI LO REQUIERE",
+    "ACCESO A LA APP DE SEGUIMIENTO CON PROGRAMA DE ENTRENAMIENTO PERSONALIZADO (OPTIONAL)",
     "1 EVALUACION DE SEGUIMIENTO GRATIS A LOS 3 MESES CONSECUTIVOS",
   ],
 };
@@ -44,7 +45,7 @@ const serviceColumns = [
     eyebrow: "Recovery",
     features: [
       "MASAJE DE DESCARGA MUSCULAR - RD$2,000",
-      "TERAPIA DE CUPPING/VENTOSAS - RD$2,000",
+      "CUPPING/VENTOSAS CON DESCARGA MUSCULAR - RD$3,000",
     ],
   },
   {
@@ -52,7 +53,6 @@ const serviceColumns = [
     eyebrow: "Performance",
     features: [
       "READAPTACION DEPORTIVA - RD$2,000",
-      "TERAPIA VIBRATORIA - RD$2,000",
     ],
   },
 ];
@@ -134,7 +134,7 @@ const ServicesSection = () => {
           </div>
         </article>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2">
           {serviceColumns.map((column) => (
             <article
               key={column.title}

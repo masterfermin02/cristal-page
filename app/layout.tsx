@@ -51,7 +51,7 @@ function Footer() {
           </a>
         </div>
         <p className="mt-8 text-xs uppercase tracking-[0.24em] text-[#b2a6a3]">
-          Plaza Dommyn Mall · Santiago · Entrenamiento sin compromiso
+          Plaza Dommyn Mall · Santiago · Entrenamiento con compromiso
         </p>
       </div>
     </footer>
